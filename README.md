@@ -1,5 +1,16 @@
-### Requirements: 
-- App should have currencies of Rs. 1, 5, 10, 20, 50, 100, 500, 2000.
-- Input: bill amount.
-- Input: cash given by the customer.
-- Output: amount to be returned in change to the customer with the minimum number of notes.
+# Cash Register Manager
+
+#### Useful app created using simple JavaScript that tells the user the amount to be returned to the customer with the minimum number of notes possible.
+
+<hr/>
+
+[Live demo of the app](https://ngc-mark10.netlify.app/)
+
+<hr/>
+
+### Technology Used:
+- HTML, CSS
+- Javascript
+- Deployed on Netlify
+
+<hr/>
