@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cash Register</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="container">
-      <div>
-        <h1 class="heading">Cash Register</h1>
-        <p class="description">
-          Enter the bill amount and cash given by the customer
-        </p>
 
-        <label class="input-label" for="bill-amount">Bill Amount:</label>
-        <input type="number" min="0" class="input" id="bill-amount" />
-        <!-- <button id="">Next</button> -->
-        <label class="input-label" for="cash-given">Cash Given:</label>
-        <input type="number" min="0" class="input" id="cash-given" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cash Register Manager</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">
+            Enter the bill amount and cash given by the customer and know minimum
+            number of notes to return.
+        </p>
+        <label for="bill-amount" class="label">Bill Amount: </label>
+        <input id="bill-amount" class="input" />
+        <label for="cash-given" class="label">Cash Given: </label>
+        <input id="cash-given" class="input" />
         <button id="check-button">Check</button>
-        <p id="error-message"></p>
+        <p id="error"></p>
         <table class="change-table">
-          <caption id="table-caption"></caption>
-          <tr>
-            <th colspan="1">No. of Notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-          </tr>
-          <tr>
-            <th>Note</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-          </tr>
+            <caption>
+                Amount to be returned:
+                <span id="return"></span>
+            </caption>
+            <tr>
+                <th>No. of Notes</th>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+                <td class="number-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
         </table>
-      </div>
-    </main>
+    </div>
     <!-- =============== Footer Section =============== -->
     <footer class="footer">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
-      </div>
+        <div class="footer-links">
+            <ul>
+                <ul>
+                    <li><a href="https://github.com/madhvsvdan">GitHub</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/madhvsvdan/">LinkedIn</a>
+                    </li>
+                    <li><a href="https://twitter.com/madhvsvdan">Twitter</a></li>
+                </ul>
+        </div>
     </footer>
-    <script src="app.js" type="text/javascript"></script>
-  </body>
+</body>
+<script src="app.js"></script>
+
 </html>

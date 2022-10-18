@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
   padding: 0;
@@ -7,11 +7,12 @@
 }
 
 :root {
-  --primary-color: #292524;
+  --primary-color: hsl(214, 70%, 50%);
+  --primary-light: hsl(214, 70%, 70%);
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Container */
@@ -101,8 +102,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--accent);
-  color: var(--colorLight);
+  color: var(--primary-color);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -120,9 +120,6 @@ td {
   font-weight: bold;
 }
 
-.footer-links li:hover {
-  background-color: var(--accent-sec);
-}
 li {
   list-style: none;
 }
